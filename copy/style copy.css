@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('./font/Raleway-Light.woff') format('woff');
+    font-weight: normal;
+}
+
+:root {
+    --default-font: 'Raleway-Light'
+}
+
+body {
+    aspect-ratio: 16 / 9;
+}
+
+.box {
+    aspect-ratio: 16 / 9;
+    /* width: 1000px; */
+}
+
+.header {
+    /* Flex 설정 */
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    /* 마진 패딩 레이아웃 */
+    margin: 0rem 10rem;
+    /* margin: 0rem 10rem; */
+    padding: 2rem;
+
+    font-family: var(--default-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.menubar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+    flex: 1;
+}
+
+.social {
+    display: flex;
+    gap: 3rem;
+    flex: 1;
+
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.discord {
+    color: #5865F2;
+}
+
+.github {
+    color: #333;
+}
+
+.memberbox {
+    /* margin: 2rem 0rem; */
+    padding: 3rem 14rem;
+    flex-direction: column;
+    background-color: lightblue;
+    display: flex;
+}
+
+.membertitle {
+    /* position: absolute; */
+    font-size: 1.5rem;
+    /* height: 10rem; */
+    margin: 1rem 0rem;
+}
+
+.memberlist {
+    display: flex;
+
+    
+    gap: 3rem;
+    
+}
+
+
+
+.memberbg {
+    position: relative;
+    display: flex;
+
+    background-color: white;
+
+    /* border: transparent 1px solid; */
+    border-radius: 1rem;
+    /* margin-bottom: 2rem; */
+    
+
+    width: 100%;
+
+    background-image: url('./image/FirstMember_Parfait.png');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.member {
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    backdrop-filter: blur(10px) brightness(130%);
+}
+
+.profile {
+    height: 4rem;
+    width: 4rem;
+}
+
+/* .name {
+
+}
+
+.detail {
+
+} */
