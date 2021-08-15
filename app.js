@@ -75,7 +75,7 @@ memberloadlist.push(member7.element)
 memberloadlist.push(member8.element)
 
 var CurruntFirst = 0
-var RenderMember = 4
+var RenderMember = 4    
 var MaxRender = memberloadlist.length
 
 var AnimateTime = 300
@@ -92,7 +92,6 @@ setInterval(
             setTimeout( function () {
                 resetAnime()
                 removeFirst()
-                goBack()
                 CurruntFirst += 1
                 memberlist.appendChild(memberloadlist[RenderMember + CurruntFirst - 1])
             }, AnimateTime)
@@ -145,17 +144,6 @@ function resetAnime() {
             console.log(child)
         }
     
-    })
-}
-
-function goBack() {
-    memberlist.childNodes.forEach(child => {
-        try {
-            child.style.transition = 'none'
-            child.style.transform = ''
-        } catch {
-            console.log(child)
-        }
     })
 }
 
